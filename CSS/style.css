@@ -1,27 +1,31 @@
 .top-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    display: flex;                    /* puts elements in row */
+    align-items: center;              /* aligns elements vertically center */
+    justify-content: space-between;   /* first element left, last element right */
+    padding: 10px 20px;               /* inner spacing inside the container */
+    position: relative;               /* reference point for absolutely positioned elements */
 
 }
 
 .logo {
-    display: block;       /* */
-    margin: 0 auto;       /* */
-    width: 100px;         /* */
-    height: auto;         /* */
-    padding-top: 10px;    /* */
+    display: block;       /* block element */
+    margin: 0 auto;       /* center horizontally */
+    width: 100px;         /* length */
+    height: auto;         /* proportional height */
+    padding-top: 10px;    /* optional top spacing */
 }
 
 .flag {
-    width: 30px;     /* length */
+    width: 20px;     /* length */
     height: auto;    /* proportional height */
 }
 
 .flags {
-    display: flex;              /* puts immages in row */
+    display: flex;              /* puts images in row */
     gap: 8px;                   /* gap between flags */
     justify-content: flex-end;  /* moves the flags on the right */
     align-items: center;        /* aligns flags vertically */
+    position: absolute;         /* removes element from normal layout flow */
+    right: 20px;                /* 20px away from right edge of reference */
+    top: 10px                   /* 10px away from to edge of reference */
 }
