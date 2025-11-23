@@ -1,11 +1,27 @@
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+.logo {
+    display: block;       /* */
+    margin: 0 auto;       /* */
+    width: 100px;         /* */
+    height: auto;         /* */
+    padding-top: 10px;    /* */
+}
+
 .flag {
-    width: 30px;  /* length */
-    height: auto; /*proportional height */
+    width: 30px;     /* length */
+    height: auto;    /* proportional height */
 }
 
 .flags {
     display: flex;              /* puts immages in row */
-    gap: 8px;                   /*gap between flags */
-    justify-content: flex-end;  /*moves the flags on the right */
+    gap: 8px;                   /* gap between flags */
+    justify-content: flex-end;  /* moves the flags on the right */
     align-items: center;        /* aligns flags vertically */
 }
