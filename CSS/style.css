@@ -1,37 +1,48 @@
-body{
+* {
+    margin: 0;               /* sets the margin 0 for all elements */
+    padding: 0;              /* sets the padding 0 for all elements */
+    box-sizing: border-box;  /* element size stays as decided, even after adding padding ecc. Prevents "overflowing" */
+}
 
+/*
+   -------- INDEX FILE ---------
+*/   
+
+.index_body {
     background-color: #ffffff;
+    /* font family: */
+    margin: 0;        /* outer white space */
+    padding: 0px;     /* inner white space(within containers) */
+}
+.top-bar {
+    background-color: #cfa66c;      /* selects background color for given section */
+    display: flex;                    /* puts elements in row */
+    align-items: center;              /* aligns elements vertically center */
+    justify-content: space-between;   /* first element left, last element right */
+    padding: 10px 20px;               /* inner spacing inside the container */
+    position: relative;               /* reference point for absolutely positioned elements */
 
-    .top-bar {
-        background-color: #F8E9D4;      /* selects background color for given section */
-        display: flex;                    /* puts elements in row */
-        align-items: center;              /* aligns elements vertically center */
-        justify-content: space-between;   /* first element left, last element right */
-        padding: 10px 20px;               /* inner spacing inside the container */
-        position: relative;               /* reference point for absolutely positioned elements */
+}
 
-    }
+.logo {
+    display: block;       /* block element */
+    margin: 0 auto;       /* center horizontally */
+    width: 100px;         /* length */
+    height: auto;         /* proportional height */
+    padding-top: 10px;    /* optional top spacing */
+}
 
-    .logo {
-        display: block;       /* block element */
-        margin: 0 auto;       /* center horizontally */
-        width: 100px;         /* length */
-        height: auto;         /* proportional height */
-        padding-top: 10px;    /* optional top spacing */
-    }
+.flag {
+    width: 20px;     /* length */
+    height: auto;    /* proportional height */
+}
 
-    .flag {
-        width: 20px;     /* length */
-        height: auto;    /* proportional height */
-    }
-
-    .flags {
-        display: flex;              /* puts images in row */
-        gap: 8px;                   /* gap between flags */
-        justify-content: flex-end;  /* moves the flags on the right */
-        align-items: center;        /* aligns flags vertically */
-        position: absolute;         /* removes element from normal layout flow */
-        right: 20px;                /* 20px away from right edge of reference */
-        top: 10px                   /* 10px away from to edge of reference */
-    }
+.flags {
+    display: flex;              /* puts images in row */
+    gap: 8px;                   /* gap between flags */
+    justify-content: flex-end;  /* moves the flags on the right */
+    align-items: center;        /* aligns flags vertically */
+    position: absolute;         /* removes element from normal layout flow */
+    right: 20px;                /* 20px away from right edge of reference */
+    top: 10px                   /* 10px away from to edge of reference */
 }
