@@ -15,13 +15,17 @@
     padding: 0px;     /* inner white space(within containers) */
 }
 .top-bar {
-    background-color: #cfa66c;      /* selects background color for given section */
-    display: flex;                    /* puts elements in row */
-    align-items: center;              /* aligns elements vertically center */
-    justify-content: space-between;   /* first element left, last element right */
-    padding: 10px 20px;               /* inner spacing inside the container */
-    position: relative;               /* reference point for absolutely positioned elements */
+    background-color: #e7cda5;          /* selects background color for given section */
+    display: grid;
+    align-items: center;                  /* aligns vertically center */
+    padding: 10px 20px;                   /* inner spacing inside the container */
+    position: relative;                   /* reference point for absolutely positioned elements */
+    grid-template-columns: 1fr auto 1fr;  /*  */
+}
 
+.contact-header {
+    justify-self: start;
+    padding-left: 30px;
 }
 
 .logo {
@@ -29,7 +33,7 @@
     margin: 0 auto;       /* center horizontally */
     width: 100px;         /* length */
     height: auto;         /* proportional height */
-    padding-top: 10px;    /* optional top spacing */
+    justify-self: center;
 }
 
 .flag {
@@ -38,11 +42,27 @@
 }
 
 .flags {
+    align-self: start;
     display: flex;              /* puts images in row */
     gap: 8px;                   /* gap between flags */
-    justify-content: flex-end;  /* moves the flags on the right */
-    align-items: center;        /* aligns flags vertically */
-    position: absolute;         /* removes element from normal layout flow */
-    right: 20px;                /* 20px away from right edge of reference */
-    top: 10px                   /* 10px away from to edge of reference */
+    justify-self: end;
+    padding-top: 8px;
+}
+
+.header-prompts {
+    background-color:limegreen;
+    display: flex;
+    height: 35px;
+    gap: 10rem;        /* relativ to the screen, works on all devices */
+    justify-content: center;
+    align-items: center;    
+}
+
+.header-prompts a {
+    text-decoration: none;    /* removes underlines in nav text */
+    color: black;           /* could be changed later */
+}
+
+.header-prompts a:hover {
+    color:maroon
 }
