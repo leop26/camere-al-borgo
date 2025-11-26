@@ -54,21 +54,60 @@
     background-color:rgb(128, 196, 128);
     display: flex;
     height: 35px;
-    gap: 10vw;                       /* relative to the screen, works on all devices note: rem is relative to the font size*/
+    gap: 12vw;                       /* relative to the screen, works on all devices note: rem is relative to the font size*/
     justify-content: center;
     align-items: center;    
     padding: 0 20px;
 }
 
-.header-prompts a {
-    text-decoration: none;    /* removes underlines in nav text */
-    color: black;           /* could be changed later */
+.header-prompts > .nav-item > a {   /* Select only the elements that are directly inside this parent, NOT deeper inside */
+    text-decoration: none;          /* removes underlines in nav text */
+    color: black;                 /* could be changed later */
 }
 
-.header-prompts a:hover {
+.header-prompts > .nav-item > a:hover {
     color:#447555
 }
 
+.nav-item {
+    position: relative;
+}
+
+.dropdown-header > a {
+    display: block;            /* make each link take full width and stack vertically */
+    padding: 8px 12px;         /* spacing inside each link for easy clicking */
+    text-decoration: none;     /* remove underlines */
+    color: #333;             /* text color for dropdown links */
+    white-space: nowrap;       /* prevent text from breaking into multiple lines */
+}
+
+.dropdown-header > a:hover {
+    background: #cd3939;       /* highlight on hover */
+}
+
+.nav-item:hover .dropdown-header {
+    display: block;   /* show dropdown when parent is hovered */
+}
+
+.dropdown-header {
+    display: none;              /* completely hide the dropdown links */
+    position: absolute;         /* position relative to parent nav-item */
+
+    top: 100%;                  /* place directly below the parent link */
+    left: 50%;                         /* dropdown menu starts at center of the parent */
+    transform: translateX(-50%); /* shift left by half its width to center */
+    background: rgb(235, 214, 214);        /* white background */
+    border: 2px solid #ccc;   /* light border to define the dropdown */
+    z-index: 1000;              /* ensures dropdown appears above other elements */
+}
+
+
+
+
+
+/*
+    ----------- FOOTER ----------
+*/
 .footer {
     background-color: #FBECD7;          /* selects background color for given section */
     display: grid;                        /* element becomes grid container */
