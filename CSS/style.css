@@ -15,8 +15,8 @@
     padding: 0px;     /* inner white space(within containers) */
 }
 .top-bar {
-    background-color: #e7cda5;          /* selects background color for given section */
-    display: grid;
+    background-color: #FBECD7;          /* selects background color for given section */
+    display: grid;                        /* element becomes grid container */
     align-items: center;                  /* aligns vertically center */
     padding: 10px 20px;                   /* inner spacing inside the container */
     position: relative;                   /* reference point for absolutely positioned elements */
@@ -25,15 +25,16 @@
 
 .contact-header {
     justify-self: start;
-    padding-left: 30px;
+    align-self: start;
+    font-size: 2.5vh;
 }
 
 .logo {
-    display: block;       /* block element */
-    margin: 0 auto;       /* center horizontally */
-    width: 100px;         /* length */
-    height: auto;         /* proportional height */
-    justify-self: center;
+    display: block;         /* block element */
+    margin: 0 auto;         /* center horizontally */
+    width: 100px;           /* length */
+    height: auto;           /* proportional height */
+    justify-self: center;   /* alignes grid item horizontally inside its own grid cell */
 }
 
 .flag {
@@ -50,10 +51,10 @@
 }
 
 .header-prompts {
-    background-color:limegreen;
+    background-color:rgb(128, 196, 128);
     display: flex;
     height: 35px;
-    gap: 10rem;        /* relativ to the screen, works on all devices */
+    gap: 10vw;                       /* relative to the screen, works on all devices note: rem is relative to the font size*/
     justify-content: center;
     align-items: center;    
 }
@@ -64,5 +65,5 @@
 }
 
 .header-prompts a:hover {
-    color:maroon
+    color:#447555
 }
