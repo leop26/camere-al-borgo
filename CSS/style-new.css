@@ -4,16 +4,19 @@
     box-sizing: border-box;  /* element size stays as decided, even after adding padding ecc. Prevents "overflowing" */
 }
 
+
+/* 
+--------- HEADER --------
+ */
 .header > * {
     flex-shrink: 0;  /* prevents items from shrinking below width */
 }
-
 
 .header {
     position: sticky;
     display: flex;
     width: 100%;
-    height: 10vh;
+    height: 7vh;
     flex-direction: row;
 }
 
@@ -22,6 +25,7 @@
     justify-content: center;
     width: 20vw;
     background-color: rgb(49, 192, 123);
+    overflow: hidden;
 }
 .burger-menu-item {
     background-color: rgb(49, 192, 123);
@@ -70,32 +74,57 @@
     border-radius: 20px;
 }
 
+/*
+-----------INDEX-GALLERY----------
+*/
 .gallery-interface {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gallery-logo {
+    position: absolute;
+    margin-top: 20px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gallery-logo img {
+    width: 22vw;
+    height: auto;
+}
+
+.gallery-images {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.gallery-logo {
+.gallery-images img {
     position: absolute;
-    z-index: 10;
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
 }
 
-.gallery-images {
-
+.gallery-images img.active {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .gallery-menu {
-
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: aliceblue;
 }
 
-.prev-picture {
-
-}
-
-.next-picture {
-
+.prev-picture, .next-picture {
+    
 }
