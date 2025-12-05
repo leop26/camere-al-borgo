@@ -128,3 +128,44 @@
 .prev-picture, .next-picture {
     
 }
+/*
+--------INDEX TEXT--------
+*/
+
+
+/*
+--------RATING CONTAINER-------
+*/
+.rating-container {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+}
+.rating-container a {   /* a is inline by default!! */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rating-block {
+    display:flex;
+    flex-direction: column;
+}
+
+.rating-logo {
+    width: 8vh;      /* fixed box width */
+    height: 8vh;     /* fixed box height */
+    object-fit: cover; /* scales image to fit inside box without distortion */
+
+}
+
+.rating-score {
+    color: black;
+    margin-top: 2vh;
+    font-size: large;
+}
+
