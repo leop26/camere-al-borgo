@@ -18,17 +18,16 @@
     width: 100%;
     height: 7vh;
     flex-direction: row;
+    background-color: #4d9265a8;
 }
 
 .burger-menu-container {
     display: flex;
     justify-content: center;
     width: 20vw;
-    background-color: rgb(49, 192, 123);
     overflow: hidden;
 }
 .burger-menu-item {
-    background-color: rgb(49, 192, 123);
     width: 13vw;
     align-self: center;
 }
@@ -39,21 +38,22 @@
     align-items: center;         /* vertical centering */
     text-decoration: none;
     height: 100%;                /* fill header height if needed */
-    background-color: rgb(201, 170, 47);
-    font-size: 1.5em;
+    font-size: 1em;
     padding-left: 6vw;
     padding-right: 6vw;
+    color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    
 }
 
 
 .info-header {
     display: flex;
-    background-color: rgb(255, 255, 255);
     margin-left: auto; 
     align-items: flex-start;
     padding-top: 1vh;
-    padding-right: 4vw;
-    padding-left: 18vw;
+    padding-right: 1vw;
 }
 
 .contact-button {
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 1vh;
+    gap: 0.7vh;
 }
 
 .flag {
@@ -80,7 +80,6 @@
 .gallery-interface {
     position: relative;
     width: 100vw;
-    height: 100vh;
     overflow: hidden;
 }
 
@@ -95,38 +94,45 @@
 .gallery-logo img {
     width: 22vw;
     height: auto;
+    border-radius: 20px;
+
 }
 
 .gallery-images {
     position: relative;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: auto;
+    display: inline-block;
 }
 
 .gallery-images img {
-    position: absolute;
+    display: block;
     display: none;
 }
 
 .gallery-images img.active {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .gallery-menu {
-    display: flex;
-    z-index: 10;
-    position: absolute;
-    bottom: 20px;
+    position: absolute; 
+    bottom: 0; /* sticks to bottom of image */
     left: 50%;
     transform: translateX(-50%);
-    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    padding-bottom: 1vh; /* spacing from image bottom */
+    z-index: 100;
+    gap: 2vw;
 }
 
 .prev-picture, .next-picture {
-    
+    color: rgb(255, 255, 255);
+    background: none;
+    border-radius: 10px;
 }
 /*
 --------INDEX TEXT--------
