@@ -205,3 +205,70 @@
     width: 7vh;
 }
 
+/* 
+------FOOTER-INDEX--------
+*/
+.footer {
+    background-color: #4d9265;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.telephone-footer,
+.email-footer,
+.position-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+.position-footer a {
+    text-decoration: none;
+    color:black;
+}
+
+.position-number {
+}
+
+
+.phone-icon {
+    width: 7vh;
+}
+
+.email-icon {
+    width: 5vh;
+}
+
+.position-icon {
+    width: 7vh;
+}
+
+.logo-footer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+.logo-footer-img {
+    width: 15vh;
+    border-radius: 10px;
+}
+
+.copyright{
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+
+
+
