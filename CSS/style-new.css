@@ -311,14 +311,17 @@
     text-align: center;
 }
 
-.room-1-gallery {
-    display: flex;
+.room-gallery {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
 }
-.room-1-gallery > img {
+.room-gallery > img {
     display: none;
 }
 
-img.active-room-1 {
+img.active-rooms {
     display: block;
     width: 100%;
     height: auto;
@@ -356,10 +359,6 @@ img.active-room-1 {
     width: 4vw;
     height: auto;
     margin-right: 2vw;
-}
-
-.person-logo {
-
 }
 
 .square-meters {
