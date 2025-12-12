@@ -376,6 +376,22 @@ img.active-rooms {
     margin-right: 1vw;;
 }
 
+.room-summary {
+    list-style: none;
+}
+.room-summary::after {
+    content: ">";
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
+    right: 2vw;
+    transition: transform 0.3s;
+
+}
+details[open] .room-summary::after {
+    transform: rotate(90deg);
+}
+
 
 /*
 ------------------------------------------------------------------
