@@ -306,9 +306,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 12vh;
 }
 .room-interface h3 {
     text-align: center;
+    margin-bottom: 2vh;
 }
 
 .room-gallery {
@@ -378,6 +380,7 @@ img.active-rooms {
 
 .room-summary {
     list-style: none;
+    padding: 1vh 1vh 1vh 1vh;
 }
 .room-summary::after {
     content: ">";
@@ -390,6 +393,10 @@ img.active-rooms {
 }
 details[open] .room-summary::after {
     transform: rotate(90deg);
+}
+
+.room-interface > details {
+    border-bottom: 1px solid black;
 }
 
 
@@ -408,4 +415,8 @@ details[open] .room-summary::after {
     text-align: center;
     margin-top: 2vh;
     margin-bottom: 3vh;
+}
+
+.main-faq > section >details {
+    border: 1px solid gray;
 }
