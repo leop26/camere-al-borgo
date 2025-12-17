@@ -420,3 +420,33 @@ details[open] .room-summary::after {
 .main-faq > section >details {
     border: 1px solid gray;
 }
+
+
+
+
+/*
+------------------------------------------------------------------
+-----------------PRICES-FILE---------------------------------------
+------------------------------------------------------------------
+*/
+
+.main-prices h2 {
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.main-prices {
+    background-color: #f0ddc3;
+    padding-top: 7vh;
+}
+.main-prices p {
+    padding: 0vh 3vh 8vh 3vh ;   /* top, right, bottom, left*/
+    text-align: center;
+    line-height: 1.6;
+}
+
+.prices-table {
+    width: 80%;
+    
+}
