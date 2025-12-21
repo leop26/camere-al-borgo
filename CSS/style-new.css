@@ -409,6 +409,8 @@ details[open] .room-summary::after {
 .main-faq {
     background-color: #f0ddc3;
     padding-top: 7vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 .main-faq h2 {
@@ -417,10 +419,34 @@ details[open] .room-summary::after {
     margin-bottom: 3vh;
 }
 
-.main-faq > section >details {
-    border: 1px solid gray;
+.faq-summary {
+    list-style: none;
 }
 
+.faq-item {
+    padding: 1vh 1vh 1vh 1vh;
+    margin-bottom: 2vh;
+    border: 1px solid grey;
+}
+
+.faq {
+    padding: 1vh 1vh 1vh 1vh;
+    
+}
+
+.faq-summary::after {
+    content: ">";
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
+    right: 7vw;
+    transition: transform 0.3s;
+
+}
+
+details[open] .faq-summary::after {
+    transform: rotate(90deg);
+}
 
 
 
