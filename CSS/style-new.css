@@ -300,14 +300,20 @@
 /*
 ------------------INFORMATION-BLOCK------------------------
 */
+.main-rooms .important-infos {
+    margin: 0vh 0vh 2.5vh 1.5vh;
+    text-decoration: underline;
 
-.main-rooms ul {
-    padding-left: 6vw;     /* indentation so bullets appear */
-    margin: 2vh 0vh 2vh 0vh
 }
 
+.main-rooms .info-list {
+    padding-left: 9vw;
+    margin: 2vh 2vh 2vh 0vh
+}
 
-
+.info-list li {
+    padding-bottom: 3vh;
+}
 
 
 /*
@@ -390,6 +396,10 @@ img.active-rooms {
     margin-right: 1vw;;
 }
 
+/*
+------------------ROOM-DETAILS------------------------
+*/
+
 .room-summary {
     list-style: none;
     padding: 1vh 1vh 1vh 1vh;
@@ -401,14 +411,44 @@ img.active-rooms {
     font-weight: bold;
     right: 2vw;
     transition: transform 0.3s;
-
 }
+
 details[open] .room-summary::after {
     transform: rotate(90deg);
 }
 
 .room-interface > details {
     border-bottom: 1px solid black;
+}
+
+
+.room-features {
+    list-style: none;
+    padding-left: 0;
+    margin: 2vh 0;
+}
+
+.room-features li {
+    position: relative;
+    padding-left: 9vw;
+    margin-bottom: 1.2vh;
+    line-height: 1.4;
+}
+
+.room-features li.yes::before {
+    content: "✔";
+    position: absolute;
+    left: 2vh;
+    color: green;
+    font-weight: bold;
+}
+
+.room-features li.no::before {
+    content: "✖";
+    position: absolute;
+    left: 2vh;
+    color: darkred;
+    font-weight: bold;
 }
 
 
