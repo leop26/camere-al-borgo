@@ -22,7 +22,7 @@
     width: 100%;
     height: 7vh;
     flex-direction: row;
-    background-color: #4d9265;
+    background-color: rgb(139, 181, 198);
     z-index: 101;
     
 }
@@ -213,7 +213,7 @@
 ------FOOTER-INDEX--------
 */
 .footer {
-    background-color: #4d9265;
+    background-color: rgb(139, 181, 198);
     display: flex;
     flex-direction: column;
 }
@@ -528,13 +528,27 @@ details[open] .faq-summary::after {
     padding-top: 7vh;
 }
 .main-prices p {
-    padding: 0vh 3vh 8vh 3vh ;   /* top, right, bottom, left*/
+    padding: 0vh 3vh 2vh 3vh ;   /* top, right, bottom, left*/
     text-align: center;
     line-height: 1.6;
 }
 
+.main-prices .separator {
+    position: absolute;
+    justify-content: center;
+    border-top: 2px solid rgb(45, 111, 155);
+    width: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .main-prices h3 {
     text-align: center;
+    
+}
+
+.top-h3 {
+    margin-top: 15vh;
 }
 
 .season-dates {
@@ -548,15 +562,12 @@ details[open] .faq-summary::after {
     align-items: center;
     text-align: left;
     gap: 2vw;
-    padding: 0vh 2vw 8vh 2vw;
+    padding: 0vh 2vw 14vh 2vw;
 }
 
 .animal-text {
     font-size: small;
 }
-
-
-
 
 /*
 ------------------PRICES-TABLES------------------------
