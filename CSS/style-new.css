@@ -533,8 +533,48 @@ details[open] .faq-summary::after {
     line-height: 1.6;
 }
 
-.prices-table {
-    width: 80%;
-    
+.main-prices h3 {
+    text-align: center;
 }
 
+.season-dates {
+    display: block;
+    text-align: center;
+    font-size: small;
+}
+
+.animal-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 2vw;
+    padding: 0vh 2vw 8vh 2vw;
+}
+
+.animal-text {
+    font-size: small;
+}
+
+
+
+
+/*
+------------------PRICES-TABLES------------------------
+*/
+
+.prices-table {
+    border-collapse: collapse; /* mandatory */
+    margin: 1vh 1vh 1vh 1vh;
+    width: 95%;
+}
+
+.prices-table, .prices-table th, .prices-table td {
+    border: 1px solid black;
+    padding: 1vh;
+    text-align: center;
+}
+
+.prices-table th.corner {
+    border-top: 0;
+    border-left: 0;
+}
