@@ -346,35 +346,43 @@
 }
 
 .room-gallery {
-    display: block;
-    position: relative;
-    overflow: hidden;
-
-}
-.room-gallery > img {
-    display: none;
+    display: flex;               /* horizontal row of images */
+    overflow-x: auto;            /* scrollable on x-axis */
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory; /* snap per image */
+    gap: 2vw;
 }
 
-img.active-rooms {
-    display: block;
+.room-image {
+    display: inline-block;
+    flex: 0 0 100%;
+    position: relative;         /* arrows position relative to image */
+    scroll-snap-align: start;   /* each image snaps at start */
+}
+
+.room-image > img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid grey;
+    scroll-snap-align: start;
 }
 
-.gallery-menu-rooms {
+.room-image .gallery-menu-rooms {
     position: absolute;
     display: flex;
     justify-content: space-between;
     width: 95%;
     z-index: 100;
-    bottom: 50%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%);
 }
 
+
 .gallery-menu-rooms span {
     transform: scaleY(4);
-    color: white;
+    color: rgba(255, 255, 255, 0.457);
 }
 
 .people-amount {
@@ -405,7 +413,7 @@ img.active-rooms {
     padding: 0.3vh 0.4vh 0vh 0.4vh;
 
 }
-.square-meters img {
+.square-meters > img {
     width: 4vw;
     margin-right: 1vw;;
 }
