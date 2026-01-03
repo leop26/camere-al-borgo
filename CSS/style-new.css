@@ -89,14 +89,13 @@
     display: flex;
     z-index: 10;                  /* same as people-amount */
     position: absolute;
-    top: 5%;                       /* adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);  /* center horizontally */
+    top: 2vh;                       /* adjust as needed */
+    right: 2vh;
     opacity: 1;
 }
 
 .gallery-logo img {
-    width: 24vw;                   /* adjust size similar to room icons */
+    width: 20vw;                   /* adjust size similar to room icons */
     height: auto;
     border-radius: 10px;           /* match your design style */
 
@@ -327,8 +326,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid grey;
     scroll-snap-align: start;
+    border-radius: 20px;
+    padding: 1vh 1vh 1vh 1vh;
 }
 
 .gallery-image .gallery-menu {
