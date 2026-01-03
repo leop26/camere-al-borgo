@@ -241,7 +241,6 @@
 .privacy-policy a:hover,
 .privacy-policy a:active {
   color: black;
-  text-decoration: none;
 }
 
 .privacy-policy a:hover {
@@ -595,6 +594,11 @@ details[open] .faq-summary::after {
 
 .vacation-text {
     text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
 }
 
 .image-block {
@@ -606,6 +610,7 @@ details[open] .faq-summary::after {
     height: auto;
     width: 80vw ;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
 .image-block figcaption {
