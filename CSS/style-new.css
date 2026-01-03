@@ -603,3 +603,45 @@ details[open] .faq-summary::after {
     border-top: 0;
     border-left: 0;
 }
+
+
+/*
+------------------------------------------------------------------
+-----------------VACATION-FILE---------------------------------------
+------------------------------------------------------------------
+*/
+
+.main-vacation {
+    background-color: #f0ddc3;
+    padding-top: 7vh;
+}
+
+.main-vacation h2 {
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.vacation-text {
+    text-align: center;
+}
+
+.image-block {
+    margin-top: 4vh;
+}
+
+.image-block img {
+    display: block;
+    height: auto;
+    width: 80vw ;
+    margin: 0 auto;
+}
+
+.image-block figcaption {
+    text-align: center;
+    margin-top: 0.5vh;
+    padding-bottom: 7vh;
+    font-size: 0.7rem;
+    color: #666;
+
+}
