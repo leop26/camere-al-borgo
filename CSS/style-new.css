@@ -83,63 +83,26 @@
 /*
 -----------INDEX-GALLERY----------
 */
-.gallery-interface {
-    position: relative;
-    width: 100vw;
-    overflow: hidden;
-}
+
 
 .gallery-logo {
+    display: flex;
+    z-index: 10;                  /* same as people-amount */
     position: absolute;
-    margin-top: 20px;
-    z-index: 10;
+    top: 5%;                       /* adjust as needed */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%);  /* center horizontally */
+    opacity: 1;
 }
 
 .gallery-logo img {
-    width: 22vw;
+    width: 24vw;                   /* adjust size similar to room icons */
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;           /* match your design style */
 
 }
 
-.gallery-images {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: inline-block;
-}
 
-.gallery-images img {
-    display: block;
-    display: none;
-}
-
-.gallery-images img.active {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.gallery-menu-index {
-    position: absolute; 
-    bottom: 0; /* sticks to bottom of image */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    padding-bottom: 1vh; /* spacing from image bottom */
-    z-index: 100;
-    gap: 2vw;
-}
-
-.prev-picture, .next-picture {
-    color: rgb(255, 255, 255);
-    background: none;
-    border-radius: 10px;
-}
 /*
 --------INDEX TEXT--------
 */
@@ -345,7 +308,7 @@
     margin-bottom: 2vh;
 }
 
-.room-gallery {
+.gallery {
     display: flex;               /* horizontal row of images */
     overflow-x: auto;            /* scrollable on x-axis */
     overflow-y: hidden;
@@ -353,14 +316,14 @@
     gap: 2vw;
 }
 
-.room-image {
+.gallery-image {
     display: inline-block;
     flex: 0 0 100%;
     position: relative;         /* arrows position relative to image */
     scroll-snap-align: start;   /* each image snaps at start */
 }
 
-.room-image > img {
+.gallery-image > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -368,7 +331,7 @@
     scroll-snap-align: start;
 }
 
-.room-image .gallery-menu-rooms {
+.gallery-image .gallery-menu {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -380,7 +343,7 @@
 }
 
 
-.gallery-menu-rooms span {
+.gallery-menu span {
     transform: scaleY(4);
     color: rgba(255, 255, 255, 0.457);
 }
