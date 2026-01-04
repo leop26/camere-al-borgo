@@ -22,7 +22,7 @@
     width: 100%;
     height: 7vh;
     flex-direction: row;
-    background-color: rgb(139, 181, 198);
+    background-color: #447555;
     z-index: 101;
     
 }
@@ -95,7 +95,7 @@
 }
 
 .gallery-logo img {
-    width: 20vw;                   /* adjust size similar to room icons */
+    width: 25vw;                   /* adjust size similar to room icons */
     height: auto;
     border-radius: 10px;           /* match your design style */
 
@@ -175,7 +175,7 @@
 ------FOOTER-INDEX--------
 */
 .footer {
-    background-color: rgb(139, 181, 198);
+    background-color: #447555;
     display: flex;
     flex-direction: column;
 }
@@ -459,6 +459,10 @@ details[open] .room-summary::after {
 }
 
 .faq-summary {
+    display: flex;                       /* makes element a container */
+    align-items: center;                 /* aligns children vertically center */
+    justify-content: space-between;      /* divides text and arrow (first child left, last child right, max space in between) */
+
     list-style: none;
     cursor: pointer;
     padding-right: 7vw;
@@ -482,12 +486,10 @@ details[open] .room-summary::after {
 
 .faq-summary::after {
     content: ">";
-    position: absolute;
     font-size: 1.2em;
     font-weight: bold;
     right: 7vw;
     transition: transform 0.3s;
-
 }
 
 details[open] .faq-summary::after {
