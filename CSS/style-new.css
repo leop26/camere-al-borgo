@@ -465,7 +465,7 @@ details[open] .room-summary::after {
 
     list-style: none;
     cursor: pointer;
-    padding-right: 7vw;
+    padding-right: 2vw;
 }
 
 .faq-item p {
