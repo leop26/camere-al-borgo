@@ -232,7 +232,7 @@
 }
 
 .privacy-policy {
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     text-align: center;
 }
 
@@ -244,6 +244,22 @@
 }
 
 .privacy-policy a:hover {
+  text-decoration: underline;
+}
+
+.impressum {
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.impressum a,                  /* text should never ever be blue or purple (for all states) */
+.impressum a:visited,
+.impressum a:hover,
+.impressum a:active {
+  color: black;
+}
+
+.impressum a:hover {
   text-decoration: underline;
 }
 
@@ -623,4 +639,16 @@ details[open] .faq-summary::after {
     font-size: 0.7rem;
     color: #666;
 
+}
+
+
+/*
+------------------------------------------------------------------
+-----------------impressum-FILE---------------------------------------
+------------------------------------------------------------------
+*/
+
+.main-impressum {
+    background-color: #f0ddc3;
+    padding-top: 7vh;
 }
