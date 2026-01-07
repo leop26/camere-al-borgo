@@ -645,6 +645,38 @@ details[open] .faq-summary::after {
 
 /*
 ------------------------------------------------------------------
+-----------------Booking-FILE---------------------------------------
+------------------------------------------------------------------
+*/
+
+.main-booking {
+    background-color:#f0ddc3;
+    padding-top: 7vh;
+    padding-bottom: 40vh;
+}
+
+.booking-text {
+    display: block;  /* otherwise margin/padding don't work vertically */
+    margin: 5vh 2vh 7vh 2vh;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.booking-link-img {
+    display: flex;
+    justify-content: center;
+}
+
+.booking-link-img img {
+    width: 40vw;
+}
+
+
+
+
+
+/*
+------------------------------------------------------------------
 -----------------impressum-FILE---------------------------------------
 ------------------------------------------------------------------
 */
