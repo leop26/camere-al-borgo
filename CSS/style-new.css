@@ -677,11 +677,33 @@ details[open] .faq-summary::after {
 
 /*
 ------------------------------------------------------------------
------------------impressum-FILE---------------------------------------
+-----------------impressum-FILE; privacy-FILE---------------------------------------
 ------------------------------------------------------------------
 */
 
-.main-impressum {
+.main-impressum, .main-privacy {
     background-color: #f0ddc3;
     padding-top: 7vh;
 }
+
+.main-impressum h2, .main-privacy h2 {
+    text-align: center;
+    padding: 2vh 1vh 5vh 1vh;
+}
+
+.main-impressum h3, .main-privacy h3 {
+    padding: 0vh 1vh 1vh 1vh;
+}
+
+.main-impressum p, .main-privacy p {
+    padding: 0vh 1vh 5vh 1vh;
+}
+
+.main-impressum span, .main-privacy span {
+    display: block;
+    padding: 5vh 1vh 0vh 1vh;
+    text-align: right;
+}
+
+
+
