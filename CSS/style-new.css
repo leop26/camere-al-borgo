@@ -692,17 +692,22 @@ details[open] .faq-summary::after {
 }
 
 .main-impressum h3, .main-privacy h3 {
-    padding: 0vh 1vh 1vh 1vh;
+    padding: 0vh 1vh 1vh 2vh;
 }
 
 .main-impressum p, .main-privacy p {
-    padding: 0vh 1vh 5vh 1vh;
+    padding: 0vh 1vh 5vh 2vh;
 }
 
 .main-impressum span, .main-privacy span {
     display: block;
     padding: 5vh 1vh 0vh 1vh;
     text-align: right;
+}
+
+.main-privacy ul {
+    padding-left: 5vh;
+    padding-bottom: 5vh;
 }
 
 
