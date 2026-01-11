@@ -43,7 +43,7 @@
 }
 
 .burger[open] > summary::after {
-    padding: 1vh 0vh 0vh 1vh;
+    padding: 3vh 0vh 0vh 1vh;
     content: "✕";
     color: black;
     font-size: 2rem;
@@ -121,7 +121,7 @@
 }
 
 .room-interface > h3[id] {
-    scroll-margin-top: 7vh;
+    scroll-margin-top: 10vh;
 }
 
 
@@ -379,16 +379,18 @@
 ------------------------------------------------------------------
 */
 
+.main-rooms {
+    background-color: #f0ddc3;
+    padding-top: 9vh;
+}
+
 .main-rooms h2 {
     text-align: center;
     margin-top: 4vh;
     margin-bottom: 1vh;
 }
 
-.main-rooms {
-    background-color: #f0ddc3;
-    padding-top: 7vh;
-}
+
 .main-rooms p {
     padding: 0vh 3vh 8vh 3vh ;   /* top, right, bottom, left*/
     text-align: center;
@@ -434,8 +436,9 @@
     display: flex;               /* horizontal row of images */
     overflow-x: auto;            /* scrollable on x-axis */
     overflow-y: hidden;
-    scroll-snap-type: x mandatory; /* snap per image */
+    scroll-snap-type:x proximity; /* snap per image */
     gap: 2vw;
+    scroll-behavior: smooth;
 }
 
 .gallery-image {
@@ -568,7 +571,7 @@ details[open] .room-summary::after {
 
 .main-faq {
     background-color: #f0ddc3;
-    padding-top: 7vh;
+    padding-top: 9vh;
     padding-bottom: 7vh;
 }
 
@@ -609,6 +612,10 @@ details[open] .room-summary::after {
     
 }
 
+.faq-item p {
+    padding-top: 1vh;
+}
+
 .faq-summary::after {
     content: ">";
     font-size: 1.2em;
@@ -637,7 +644,7 @@ details[open] .faq-summary::after {
 
 .main-prices {
     background-color: #f0ddc3;
-    padding-top: 7vh;
+    padding-top: 9vh;
 }
 .main-prices p {
     padding: 0vh 3vh 2vh 3vh ;   /* top, right, bottom, left*/
@@ -711,12 +718,11 @@ details[open] .faq-summary::after {
 
 .main-vacation {
     background-color: #f0ddc3;
-    padding-top: 7vh;
+    padding-top: 9vh;
 }
 
 .main-vacation h2 {
     text-align: center;
-    margin-top: 4vh;
     margin-bottom: 2vh;
 }
 
@@ -759,7 +765,7 @@ details[open] .faq-summary::after {
 
 .main-booking {
     background-color:#f0ddc3;
-    padding-top: 7vh;
+    padding-top: 9vh;
     padding-bottom: 40vh;
 }
 
@@ -791,7 +797,7 @@ details[open] .faq-summary::after {
 
 .main-impressum, .main-privacy {
     background-color: #f0ddc3;
-    padding-top: 7vh;
+    padding-top: 9vh;
 }
 
 .main-impressum h2, .main-privacy h2 {
@@ -804,7 +810,7 @@ details[open] .faq-summary::after {
 }
 
 .main-impressum p, .main-privacy p {
-    padding: 0vh 1vh 5vh 2vh;
+    padding: 0vh 2vh 5vh 2vh;
 }
 
 .main-impressum span, .main-privacy span {
@@ -814,6 +820,5 @@ details[open] .faq-summary::after {
 }
 
 .main-privacy ul {
-    padding-left: 5vh;
-    padding-bottom: 5vh;
+    padding: 0vh 2vh 5vh 5vh;
 }
