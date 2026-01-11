@@ -2,6 +2,7 @@
     margin: 0;               /* sets the margin 0 for all elements */
     padding: 0;              /* sets the padding 0 for all elements */
     box-sizing: border-box;  /* element size stays as decided, even after adding padding ecc. Prevents "overflowing" */
+    /*scroll-behavior: smooth;*/
 }
 
 .main {
@@ -10,7 +11,9 @@
 }
 
 /* 
---------- HEADER --------
+---------------------------
+--------- HEADER ----------
+---------------------------
  */
 .header > * {
     flex-shrink: 0;  /* prevents items from shrinking below width */
@@ -27,16 +30,100 @@
     
 }
 
+/*
+---------Burger-Menu---------
+*/
+.burger > summary {
+    position: relative;
+    z-index: 300;
+}
+
+.burger[open] summary img {
+    display: none;
+}
+
+.burger[open] > summary::after {
+    padding: 1vh 0vh 0vh 1vh;
+    content: "✕";
+    color: black;
+    font-size: 2rem;
+}
+
+
 .burger-menu-container {
     display: flex;
     justify-content: center;
     width: 20vw;
     overflow: hidden;
 }
+
 .burger-menu-item {
     width: 13vw;
     align-self: center;
 }
+
+.burger-menu {
+    position: fixed;
+    background-color:#f0ddc3;
+    z-index: 150;
+    width: 70vw;
+    height: 100vh;
+    top:0;
+}
+
+.burger-menu > ul {
+    padding: 10vh 5vh 5vh 3vh;
+    list-style: none;
+    
+}
+
+.burger-menu > ul li {
+    padding: 4vh 0vh 0vh 0vh;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.burger-menu > ul > li  ul > li{
+    padding: 2vh 0vh 0vh 0vh;
+    font-weight:normal;
+    font-style: italic;
+}
+
+.burger-menu > ul  ul {
+    list-style: none;
+}
+
+.burger-menu > ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger:not([open]) .burger-menu {
+    display: none;    /* prevent full menu to appear even when closed on some browsers*/
+}
+
+.burger-menu summary {
+    list-style: none;
+    padding-right: 2vw;
+}
+
+.burger-menu summary::after {
+    content: ">";
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.3s;
+    float: right;
+}
+
+.burger-menu details[open] > summary::after {
+    transform: rotate(90deg);
+}
+
+.room-interface > h3[id] {
+    scroll-margin-top: 7vh;
+}
+
+
 
 .book-button {
     display: flex;               /* make the button a flex container */
@@ -709,6 +796,3 @@ details[open] .faq-summary::after {
     padding-left: 5vh;
     padding-bottom: 5vh;
 }
-
-
-
