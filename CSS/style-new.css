@@ -69,6 +69,7 @@
     width: 70vw;
     height: 100vh;
     top:0;
+    transition: max-height 0.3s ease;
 }
 
 .burger-menu > ul {
@@ -149,10 +150,30 @@
     padding-right: 2vw;
 }
 
+/*
+---------Contact-dropdown---------
+*/
+.contact {
+    position: relative; 
+}
+
 .contact-button {
     width: 7vw;
     margin-right: 3vw;
-}    
+}
+
+.contact summary {
+    list-style: none;
+}
+
+.contact p {
+    position: absolute;
+    background-color: #f0ddc3;
+    left: 50%;               
+    transform: translateX(-50%);
+    padding: 2vh 2vh 2vh 2vh;
+    border-radius: 20px;
+}
 
 .flags {
     display: flex;
