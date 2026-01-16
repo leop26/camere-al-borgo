@@ -120,7 +120,7 @@
     transform: rotate(90deg);
 }
 
-.room-interface > h3[id] {
+h3[id] {
     scroll-margin-top: 10vh;
 }
 
