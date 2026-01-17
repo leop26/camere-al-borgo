@@ -123,7 +123,9 @@
 h3[id] {
     scroll-margin-top: 10vh;
 }
-
+h2[id] {
+    scroll-margin-top: 10vh;
+}
 
 
 .book-button {
