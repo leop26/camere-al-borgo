@@ -799,9 +799,6 @@ details[open] .faq-summary::after {
 }
 
 
-
-
-
 /*
 ------------------------------------------------------------------
 -----------------impressum-FILE; privacy-FILE---------------------------------------
@@ -835,3 +832,51 @@ details[open] .faq-summary::after {
 .main-privacy ul {
     padding: 0vh 2vh 5vh 5vh;
 }
+
+
+/*
+------------------------------------------------------------------
+-----------------DESKTOP / TABLET WARNING--------------------------
+------------------------------------------------------------------
+*/
+
+.desktop-warning {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgb(0, 0, 0);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;;
+}
+
+.desktop-warning-box {
+    background: #f0ddc3;
+    padding: 4vh 4vw;
+    max-width: 420px;
+    text-align: center;
+    border-radius: 16px;
+    line-height: 1.6;
+    width: 400px;
+    height: 250px;
+
+}
+
+.desktop-warning-box h2 {
+    margin-bottom: 2vh;
+}
+
+@media (min-width: 768px) {
+    .desktop-warning {
+        display: flex;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
+
+
+
+
