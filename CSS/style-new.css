@@ -180,6 +180,7 @@ h2[id] {
     transform: translateX(-50%);
     padding: 2vh 2vh 2vh 2vh;
     border-radius: 20px;
+    line-height: 1.6;
 }
 
 .flags {
@@ -313,15 +314,11 @@ h2[id] {
     margin-top: 4vh;
 }
 .position-footer a {
-    text-decoration: none;
     color:black;
 }
 
 .phone-icon {
     width: 7vh;
-}
-.phone-number {
-    text-decoration: none;
 }
 
 .email-icon {
