@@ -1,0 +1,91 @@
+[33m12a7615[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Merge branch 'main' of https://github.com/leop26/camere-al-borgo
+[33m7aa799d[m Update CNAME
+[33mccc3771[m renamed files to make them work on website
+[33m447db57[m Update CNAME
+[33m2da5aec[m Create CNAME
+[33m61356fe[m improved header and footer contact, improved scrolling behavior in galleries
+[33mab2270e[m Added beach vicinity in all index files
+[33m5e5c676[m Improved email and phone linking in all headers and footers
+[33m032a388[m added error text for tablets and laptops
+[33m1cd57c0[m Finished privacy policy file translation in english
+[33m7a0fd02[m Merge branch 'main' of https://github.com/leop26/camere-al-borgo
+[33m62b0f65[m translated legal notice into English, made one small change in german footer
+[33m2c9d9e4[m Merge branch 'main' of https://github.com/leop26/camere-al-borgo
+[33mdd0a488[m Did translation of vacation site in italian
+[33me30dc9d[m changed flag-links in en and it
+[33ma715803[m Merge branch 'main' of https://github.com/leop26/camere-al-borgo
+[33ma2a485f[m Did all english files except impressum and privacy policy
+[33m57f89a2[m translated everything into German
+[33m9da582b[m Finished burger menu and implemented it on every site, made small fixes around the pages
+[33m2b17075[m Made a lot of small corrections all over the files. now only the different languages are missing
+[33m2b0d19b[m Finished FAQ file and linked it properly in the menu
+[33m54a2228[m finished vacation site, saved german version in vacation-de.html
+[33m3da057d[m worked on vacation site
+[33mfee214f[m updated prices
+[33m16a1143[m Made many tiny changes in all files according to mobile view(e.g. spacing, text size, links ecc)
+[33m0d5f2b7[m Implemented contact details in header, added proper index gallery images
+[33m84968b3[m Completed burger menu in index site, still needs some linking to not finished sites
+[33m8436e6d[m fixed gallery views bc there's nothing else left for me. great work!
+[33m11b40ff[m made a few improvements in the impressum and privacy files
+[33m18b9b4f[m Impressum and privacy files done
+[33mcba653b[m Started booking site(minimalistic)
+[33mda489ea[m made some minor changes in and around footer
+[33mb401758[m Merge branch 'main' of https://github.com/leop26/camere-al-borgo
+[33mf1cf2eb[m Added important line in head to conform mobile view on phpone. Updated picure paths in rooms file.
+[33m943c67f[m learned more about privacy policy, added impressum files (we need an impressum with your name and real adress)
+[33m1369864[m made padding for .faq-summary smaller
+[33m9d1c5b1[m put arrow on faq in the middle (vertically)
+[33m3be627d[m sorted pictures
+[33m134979e[m changed what had to be changed
+[33m5dcc603[m Improved gallery interface, added border radius, padding, distancing
+[33m7e7828a[m changed index gallery in accordance to room gallery
+[33mf3e7a48[m added right room area
+[33mdc8ad57[m Added the scrolling behavior in the gallery of the room file(with a lot of effort and cursing)
+[33m4491f0f[m added pictures in vacation site
+[33mfc61ef4[m added copyright, started with privacy policy and vacation site
+[33mba26e2b[m uploaded a few more pictures, neatened images
+[33mb8812c8[m uploaded new pictures
+[33mdc9d02d[m Updated a few questions in the FAQ file
+[33m3cbff31[m Added many Q&As in the FAQ file
+[33mfc07340[m Added separator in prices file, changed header/footer color
+[33maf800ac[m Improved tables in prices file and added text for animals(extra cost)
+[33m25696b7[m Improved rooms detail interface, changed wrong footer email in all sites
+[33m718083a[m Improved faq file(border radius, spacing, font style). (Celine did it :)
+[33m51812de[m changed titles and worked on faq site
+[33mae04da8[m Made very first prices  site layout, all the content still missing
+[33m641aff9[m Improved rooms page
+[33mf402828[m Improved the dropdown menu in the rooms file,still needs some more adjustments though.
+[33m164583b[m started with the faq page, NOTE: page titles need to be changed in CAMERE AL BORGO - Camere f.e.
+[33m58d79b2[m put a space between 35 and m^2 (joachim wär stolz auf mich)
+[33m7525591[m Added dropdown menu in the room interface, made the people amount and square meters stick to the image rather that whole block
+[33m4d548ea[m Started the rooms file, added header and footer, overall structure. needs 4 similar blocks for each room.
+[33mc075410[m almost finished footer, proper linking and copyright, P:IVA ecc. text required
+[33md00075f[m ultimated footer interface
+[33m696bacf[m made order in html files folders!
+[33m2be6278[m Rating container done, only menus and links left in index file
+[33m9defb75[m changed background color of whole main block and header, formatted the text paragraphs properly, added italic style where needed, centered etc. #TODO next: format the ratings block and do the footer
+[33m0f651d0[m improved the header, made the gallery picture images of proportional height, improved the menu on the image gallery
+[33m3c836fe[m added all paragraphs of the index file, with text and google/booking logos. #TODO: 1.format all text properly(size, color, margin, etc.) 2. properly link logos to google/booking.  3.maybe chose some more sharp booking/google logos  4.make the footer next
+[33m0716804[m Merge branch 'main' of https://github.com/leop26/camere-al-borgo
+[33mb4661df[m added first gallery interface in the index site, with a fixes logo on the top, and a menu for scrolling at the bottom. #TODO: 1.select right pictures in the right order; 2.create a logo without background 3. make the menu interactive with view(later with JS). We shall first complete all HTML and CSS and only then move to JS for such functions
+[33m329082c[m changed tempLogo to tempLogoEmptyBack
+[33m799fdd8[m almost finished header, started the gallery-interface in the index file
+[33m16b5bc9[m switching from desktop to mobile first. new index and css file.
+[33m7e49563[m changed some colors, started content-section and linked them to hover menu (ignore text - I'll think about it later)
+[33me997130[m added first image interface, that is supposed to be scrollable, #TODO 1.Prenota button, 2.add all pictures in a reasonable way  3.rename all pictures properly according to room  4.add <> to scroll and image number  5. implement scrolling(with mouse and <>) with JS
+[33mf1a5c4a[m added dropdown menu on header prompt, #TODO: add 'prenota' category on header prompt
+[33m76431dd[m started making the footer
+[33m1f41c23[m added comments, changed colors and put contact in left top corner, made gaps in promt line relative to screen size
+[33m134cd5c[m ultimated header and started prompt line, colors and comments need to be completed
+[33md849761[m updated italy flag, changes structure in css(every class call must be at top level), added default margin, padding and box-sizing in css(valid for all elements)
+[33m990842c[m added background colour and body section in css
+[33m8fdba51[m changed logo, made flags smaller and put flags in top right corner, wrote comments
+[33m1c6e421[m changed logo, made flags smaller and put flags in top right corner
+[33m904b44b[m test 2
+[33m5e4c308[m no change
+[33m142860c[m added logo, needs to be centered, added header and body structure
+[33m3277972[m added flags in index file, with respective classes in style.css
+[33m32227ca[m ich habe gerade eine Änderung gemacht(20:51), in der index datei
+[33m200ad90[m i don't understand what is happening
+[33m23c41a5[m second test for github
+[33ma3309ea[m Primo commit di prova
