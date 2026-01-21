@@ -886,6 +886,53 @@ details[open] .faq-summary::after {
     }
 }
 
+/*
+------------------------------------------------------------------
+-----------------LANDSCAPE-WARNING--------------------------
+------------------------------------------------------------------
+*/
+
+
+.landscape-warning {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgb(0, 0, 0);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.landscape-warning-box {
+    background: #f0ddc3;
+    padding: 4vh 4vw;
+    max-width: 420px;
+    text-align: center;
+    border-radius: 25px;
+    line-height: 1.6;
+    width: 40vw;
+    height: 50vh;
+}
+
+.landscape-warning-box h2 {
+    margin-bottom: 4vh;
+}
+
+/* Show only on MOBILE when in LANDSCAPE */
+@media (max-width: 767px) and (orientation: landscape) {
+    .landscape-warning {
+        display: flex;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
+
+
+
+
 
 
 
