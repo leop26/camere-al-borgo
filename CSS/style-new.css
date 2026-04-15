@@ -180,6 +180,12 @@ h2[id] {
     transform: translateX(-50%);
     padding: 2vh 2vh 2vh 2vh;
     border-radius: 20px;
+    line-height: 1.6;
+}
+
+.contact a {
+    text-decoration: underline;
+    color: black;
 }
 
 .flags {
@@ -287,7 +293,9 @@ h2[id] {
 }
 
 /* 
-------FOOTER-INDEX--------
+----------------------
+------FOOTER---------
+------------------------
 */
 .footer {
     background-color: #447555;
@@ -302,6 +310,10 @@ h2[id] {
     margin-top: 4vh;
 }
 
+.contact-footer a {
+    color: black;
+}
+
 .telephone-footer,
 .email-footer,
 .position-footer {
@@ -313,15 +325,11 @@ h2[id] {
     margin-top: 4vh;
 }
 .position-footer a {
-    text-decoration: none;
     color:black;
 }
 
 .phone-icon {
     width: 7vh;
-}
-.phone-number {
-    text-decoration: none;
 }
 
 .email-icon {
@@ -446,7 +454,7 @@ h2[id] {
     display: flex;               /* horizontal row of images */
     overflow-x: auto;            /* scrollable on x-axis */
     overflow-y: hidden;
-    scroll-snap-type:x proximity; /* snap per image */
+    scroll-snap-type:x mandatory; /* snap per image */
     gap: 2vw;
     scroll-behavior: smooth;
 }
@@ -456,6 +464,8 @@ h2[id] {
     flex: 0 0 100%;
     position: relative;         /* arrows position relative to image */
     scroll-snap-align: start;   /* each image snaps at start */
+    padding: 1vh 1vh 1vh 1vh;
+
 }
 
 .gallery-image > img {
@@ -464,7 +474,6 @@ h2[id] {
     object-fit: cover;
     scroll-snap-align: start;
     border-radius: 20px;
-    padding: 1vh 1vh 1vh 1vh;
 }
 
 .gallery-image .gallery-menu {
@@ -551,7 +560,7 @@ details[open] .room-summary::after {
 
 .room-features li {
     position: relative;
-    padding-left: 9vw;
+    padding-left: 10vw;
     margin-bottom: 1.2vh;
     line-height: 1.4;
 }
@@ -799,9 +808,6 @@ details[open] .faq-summary::after {
 }
 
 
-
-
-
 /*
 ------------------------------------------------------------------
 -----------------impressum-FILE; privacy-FILE---------------------------------------
@@ -835,3 +841,98 @@ details[open] .faq-summary::after {
 .main-privacy ul {
     padding: 0vh 2vh 5vh 5vh;
 }
+
+
+/*
+------------------------------------------------------------------
+-----------------DESKTOP / TABLET WARNING--------------------------
+------------------------------------------------------------------
+*/
+
+.desktop-warning {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgb(0, 0, 0);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;;
+}
+
+.desktop-warning-box {
+    background: #f0ddc3;
+    padding: 4vh 4vw;
+    max-width: 420px;
+    text-align: center;
+    border-radius: 16px;
+    line-height: 1.6;
+    width: 400px;
+    height: 250px;
+
+}
+
+.desktop-warning-box h2 {
+    margin-bottom: 2vh;
+}
+
+@media (min-width: 768px) {
+    .desktop-warning {
+        display: flex;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
+
+/*
+------------------------------------------------------------------
+-----------------LANDSCAPE-WARNING--------------------------
+------------------------------------------------------------------
+*/
+
+
+.landscape-warning {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgb(0, 0, 0);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.landscape-warning-box {
+    background: #f0ddc3;
+    padding: 4vh 4vw;
+    max-width: 420px;
+    text-align: center;
+    border-radius: 25px;
+    line-height: 1.6;
+    width: 40vw;
+    height: 50vh;
+}
+
+.landscape-warning-box h2 {
+    margin-bottom: 4vh;
+}
+
+/* Show only on MOBILE when in LANDSCAPE */
+@media (max-width: 767px) and (orientation: landscape) {
+    .landscape-warning {
+        display: flex;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
